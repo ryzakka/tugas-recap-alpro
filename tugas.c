@@ -1,4 +1,4 @@
-#include ...
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -12,7 +12,7 @@ int periksaTebakan(int bilangan, int tebakan) {
     if (tebakan == bilangan) {
         printf("Selamat! Kamu menebak bilangan yang benar.\n");
         return 1; // Return 1 kalo tebakannya dah bener
-    } ... (tebakan < bilangan) {
+    } if (tebakan < bilangan) {
         printf("Terlalu rendah! Coba lagi.\n");
     } else {
         printf("Terlalu tinggi! Coba lagi.\n");
@@ -24,7 +24,7 @@ int main() {
     int bilanganMin = 1;
     int bilanganMax = 100;
     int bilanganTarget;
-    int ...
+    int bilanganAcak;
     int percobaan = 0;
     char mainLagi;
 
