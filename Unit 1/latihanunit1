@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int so1, et1, vi2, et2, so3, vi3;
+float hasil1v, hasil2s, hasil3t;
+int main (){
+    printf("Untuk menghitung kecepatan (v) dengan jarak (s) dan waktu (t),\nSilakan masukkan nilai untuk jarak dan waktu,\nSilakan pisahkan kedua nilai dengan spasi.\nSatuan jarak adalah meter dan waktu dalam detik\n");
+    scanf("%d %d", &so1, &et1);
+    printf("%d meter dan %d detik\n===================================================\nUntuk menghitung jarak (s) dengan kecepatan (v) dan waktu (t)\nMasukkan nilai untuk kecepatan dan waktu\n", so1, et1);
+    scanf("%d %d", &vi2, &et2);
+    printf("%d m/s dan %d detik\n===================================================\nUntuk menghitung waktu (t) yang diperlukan\ndengan nilai kecepatan (v) dan jarak (s)\nSilakan masukkan nilai untuk jarak dan kecepatan\n", vi2, et2);
+    scanf("%d %d", &so3, &vi3);
+    printf("%d meter dan %d m/s\n===================================================\n===================================================\n", so3, vi3);
+    
+    //Bagian Perhitungan NIlai
+    //Menghitung kecepatan dengan jarak dan waktu
+    hasil1v = (float) so1 / et1;
+    printf("1) %.2f m/s\n", hasil1v);
+    //Menghitung jarak dengan kecepatan dan waktu
+    hasil2s = (float) vi2 * et2;
+    printf("2) %.2f meter\n", hasil2s);
+    //Menghitung waktu dengan jarak dan kecepatan
+    hasil3t = (float) so3 / vi3;
+    printf("3) %.2f detik\n", hasil3t);
+    
+    //error!! int --> float
+    
+    return 0;
+}
+
