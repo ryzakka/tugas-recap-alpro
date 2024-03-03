@@ -22,8 +22,6 @@ int main (){
     hasil3t = (float) so3 / vi3;
     printf("3) %.2f detik\n", hasil3t);
     
-    //error!! int --> float
-    
     return 0;
 }
 
